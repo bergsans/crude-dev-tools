@@ -6,7 +6,7 @@ describe("#boxify", () => {
 Hello world!
 This is a box.
     `;
-    const result = boxify(str.split("\n"));
+    const result = boxify(str);
     const expectedResult = `╔════════════════╗
 ║                ║
 ║ Hello world!   ║
