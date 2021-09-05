@@ -13,9 +13,11 @@ $ npm install crude-dev-tools
 ```
 
 ## A figlet wrapper
+![screenshot: figlet wrapper](https://raw.githubusercontent.com/bergsans/crude-dev-tools/main/assets/ascii-print-example.png)
 
 ## A boxifyer
-
-## A text formatter (*allows colors, bold)
+![screenshot: boxifier](https://raw.githubusercontent.com/bergsans/crude-dev-tools/main/assets/boxify-example.png)
 
 ## A object pretty-printer
+![screenshot: object pretty-printer](https://raw.githubusercontent.com/bergsans/crude-dev-tools/main/assets/lob-obj-example.png)
+
