@@ -1,5 +1,5 @@
 const { purify } = require("../lib/helpers");
-const { fmtStr } = require("../lib/print");
+const { fmtStr } = require("../lib/fmt-str");
 
 describe("#fmtStr", () => {
   it("Should not add ansi codes to string", () =>
