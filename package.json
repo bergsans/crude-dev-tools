@@ -1,6 +1,6 @@
 {
   "name": "crude-dev-tools",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,5 @@
     "eslint-plugin-import": "^2.24.0",
     "jest": "^27.0.6"
   },
-  "dependencies": {
-    "figlet-promises": "^1.0.1"
-  }
+  "dependencies": {}
 }

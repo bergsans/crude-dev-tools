@@ -1,12 +1,20 @@
-const { compose, concat } = require("../lib/helpers");
+const { fmtStr } = require('../lib/fmt-str');
+const { purify, compose, concat } = require('../lib/helpers');
 
-describe("#concat", () => {
-  it("string", () =>
-    expect(concat("hello, ", "world")).toEqual("hello, world"));
-  it("array", () => expect(concat([1, 2], [3, 4])).toEqual([1, 2, 3, 4]));
+describe('#concat', () => {
+  it('string', () =>
+    expect(concat('hello, ', 'world')).toEqual('hello, world'));
+  it('array', () => expect(concat([1, 2], [3, 4])).toEqual([1, 2, 3, 4]));
 });
 
-describe("#compose", () => {
+describe('#purify', () => {
+  it('purify fmtStr', () => {
+    expect(fmtStr('hello', 'blue')).not.toEqual('hello');
+    expect(purify(fmtStr('hello', 'blue'))).toEqual('hello');
+  });
+});
+
+describe('#compose', () => {
   const inc = (x) => x + 1;
   const addExplamationMark = (str) => `${str}!`;
   const filter = (pred) => (li) =>
@@ -14,12 +22,12 @@ describe("#compose", () => {
   const isEven = (x) => x % 2 === 0;
   const not = (x) => !x;
   const no123 = (x) => not(x > 0 && x < 4);
-  it("num", () => expect(compose(inc, inc)(1)).toEqual(3));
-  it("string", () =>
-    expect(compose(addExplamationMark, addExplamationMark)("Hi!")).toEqual(
-      "Hi!!!"
+  it('num', () => expect(compose(inc, inc)(1)).toEqual(3));
+  it('string', () =>
+    expect(compose(addExplamationMark, addExplamationMark)('Hi!')).toEqual(
+      'Hi!!!'
     ));
-  it("array", () =>
+  it('array', () =>
     expect(
       compose(filter(isEven), filter(no123))([1, 2, 3, 4, 5, 6, 7, 8])
     ).toEqual([4, 6, 8]));

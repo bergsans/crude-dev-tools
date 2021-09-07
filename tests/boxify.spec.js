@@ -1,7 +1,7 @@
-const { boxify } = require("../lib/boxify");
+const { boxify } = require('../lib/boxify');
 
-describe("#boxify", () => {
-  it("Returns text in box", () => {
+describe('#boxify', () => {
+  it('Returns text in box', () => {
     const str = `
 Hello world!
 This is a box.
