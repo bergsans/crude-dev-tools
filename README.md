@@ -4,6 +4,7 @@ CrudeDevTools is a minimalistic interface library for console applications. It c
 
 - A boxifyer
 - A text ANSI formatter (*colors, bold)
+- An ANSI purifier
 - A object pretty-printer
 
 ## Setup
