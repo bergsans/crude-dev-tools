@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "crude-dev-tools": "^1.0.5"
+    "crude-dev-tools": "^1.0.6"
   }
 }
