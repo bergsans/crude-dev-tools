@@ -10,5 +10,7 @@ const obj = {
     },
   },
 };
+
 console.log('With colors: ', logObj(obj));
+
 console.log('Without colors: ', logObj(obj, false));
