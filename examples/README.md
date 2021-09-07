@@ -1,0 +1,5 @@
+# Setup examples
+
+```
+npm install
+```
