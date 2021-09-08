@@ -5,7 +5,7 @@ CrudeDevTools is a minimalistic interface library for console applications. It c
 - A boxifyer
 - A text ANSI formatter (*colors, bold)
 - An ANSI purifier
-- A object pretty-printer
+- An object pretty-printer
 
 ## Setup
 ```
@@ -31,7 +31,7 @@ console.log(fmtStr(boxify(str), "blue"));
 ```
 
 
-## A object pretty-printer
+## An object pretty-printer
 ![screenshot: object pretty-printer](https://raw.githubusercontent.com/bergsans/crude-dev-tools/main/assets/lob-obj-example.png)
 
 ```
