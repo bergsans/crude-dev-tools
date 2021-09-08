@@ -1,4 +1,4 @@
-# CrudeDevTools
+![logo](https://raw.githubusercontent.com/bergsans/crude-dev-tools/main/assets/logo.png)
 
 CrudeDevTools is a minimalistic interface library for console applications. It contains
 
